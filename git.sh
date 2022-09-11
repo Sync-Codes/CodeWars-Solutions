@@ -1,13 +1,11 @@
-git init
+#!/usr/bin/env bash
 
 git add .
 
-git commit -m "first commit"
+MESSAGE = added bash script
 
-git branch -M master
+git commit -m "$MESSAGE"
 
-git remote add origin git@github.com:Sync-Codes/CodeWars-Solutions.git
+git push
 
-git push -u origin master
-
-osasript -e "display notification 'pushed to remote' with title Git Push"
+osasript -e "display notification 'pushed to remote' with title 'Git Push'"
